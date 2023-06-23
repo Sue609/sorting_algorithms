@@ -3,8 +3,7 @@
 #include "sort.h"
 
 /**
- * quick_sort - function that sorts an array of integers in ascending order using the
- * quick sort algorithm.
+ * quick_sort - function that sorts an array of integers in ascending order
  * @array: The list of arrays that we should sort.
  * @size: The length of the array that should be sorted.
  */
