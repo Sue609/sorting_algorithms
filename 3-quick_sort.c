@@ -64,7 +64,6 @@ int partition(int *array, int low, int high, size_t size)
 				temp = array[i];
 				array[i] = array[j];
 				array[j] = temp;
-
 				print_array(array, size);
 			}
 		}
@@ -74,23 +73,7 @@ int partition(int *array, int low, int high, size_t size)
 		temp = array[i + 1];
 		array[i + 1] = array[high];
 		array[high] = temp;
-
 		print_array(array, size);
 	}
 	return (i + 1);
-}
-
-
-/**
- * swap - function that swaps elements from the array.
- * @a: The first element to swap.
- * @b: The second element to swap from.
- */
-
-void swap(int *a, int *b)
-{
-	int temp = *a;
-
-	*a = *b;
-	*b = temp;
 }
