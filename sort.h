@@ -40,4 +40,6 @@ void merge_sort_helper(int *array, int l, int r);
 void merge(int *array, int l, int m, int r);
 void sift_down(int *array, size_t start, size_t end);
 void heapify(int *array, size_t size, size_t root, size_t heap_size);
+int get_max(int *array, size_t size);
+void count_sort_array(int *array, size_t size, int exp);
 #endif
