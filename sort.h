@@ -38,4 +38,6 @@ void swap(int *a, int *b);
 void swap_nodes(listint_t **list, listint_t *node1, listint_t *node2);
 void merge_sort_helper(int *array, int l, int r);
 void merge(int *array, int l, int m, int r);
+void sift_down(int *array, size_t start, size_t end);
+void heapify(int *array, size_t size, size_t root, size_t heap_size);
 #endif
