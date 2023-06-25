@@ -1,6 +1,8 @@
 #ifndef SORT_H
 #define SORT_H
 #include <stddef.h>
+#include <stdbool.h>
+
 
 /**
  * struct listint_s - Doubly linked list node
@@ -15,6 +17,11 @@ typedef struct listint_s
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
+
+typedef enum {
+    false_,
+    true_
+} boolean;
 
 
 void print_array(const int *array, size_t size);
@@ -42,4 +49,6 @@ void sift_down(int *array, size_t start, size_t end);
 void heapify(int *array, size_t size, size_t root, size_t heap_size);
 int get_max(int *array, size_t size);
 void count_sort_array(int *array, size_t size, int exp);
+void bitonic_merge(int *array, size_t size, bool dir);
+void bitonic_compare(int *array, size_t i, size_t j, bool dir);
 #endif
