@@ -18,9 +18,17 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-typedef enum {
-    false_,
-    true_
+
+/**
+ * enum boolean - function called enum.
+ *
+ * @false_: Boolean condition.
+ * @true_: Boolean condition.
+ */
+typedef enum boolean
+{
+	false_,
+	true_,
 } boolean;
 
 
